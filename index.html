@@ -164,5 +164,150 @@
 
     <script src="script.js"></script>
 
+    <!-- ================================
+     KUMPULAN TUGAS
+================================= -->
+
+<section id="tugas" class="tugas-section">
+
+    <div class="tugas-container">
+
+        <!-- HEADER -->
+        <div class="tugas-header">
+
+            <span class="tugas-label">
+                ACADEMIC
+            </span>
+
+            <h2>
+                Kumpulan Tugas
+            </h2>
+
+            <p>
+                Tempat pengumpulan tugas pribadi Laurazia Hana.
+            </p>
+
+        </div>
+
+
+        <!-- FORM UPLOAD -->
+        <div class="upload-card">
+
+            <h3>
+                Upload Tugas
+            </h3>
+
+            <form id="uploadForm">
+
+                <!-- MATA KULIAH -->
+                <div class="form-group">
+
+                    <label for="course">
+                        Mata Kuliah
+                    </label>
+
+                    <input
+                        type="text"
+                        id="course"
+                        name="course"
+                        placeholder="Contoh: Logika Matematika"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- NAMA TUGAS -->
+                <div class="form-group">
+
+                    <label for="title">
+                        Nama Tugas
+                    </label>
+
+                    <input
+                        type="text"
+                        id="title"
+                        name="title"
+                        placeholder="Contoh: Tugas Pertemuan 3"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- FILE -->
+                <div class="form-group">
+
+                    <label for="file">
+                        File Tugas
+                    </label>
+
+                    <input
+                        type="file"
+                        id="file"
+                        name="file"
+                        accept=".pdf,.doc,.docx,.ppt,.pptx,.xls,.xlsx,.zip"
+                        required
+                    >
+
+                    <small>
+                        Format: PDF, Word, PowerPoint, Excel, atau ZIP.
+                        Maksimal 4 MB.
+                    </small>
+
+                </div>
+
+
+                <!-- TOMBOL -->
+                <button
+                    type="submit"
+                    id="uploadButton"
+                >
+                    Upload Tugas
+                </button>
+
+            </form>
+
+
+            <!-- STATUS UPLOAD -->
+            <p id="uploadStatus"></p>
+
+        </div>
+
+
+        <!-- DAFTAR TUGAS -->
+        <div class="submitted-section">
+
+            <div class="submitted-header">
+
+                <h3>
+                    Tugas yang Telah Dikumpulkan
+                </h3>
+
+                <button
+                    type="button"
+                    id="refreshFiles"
+                >
+                    Refresh
+                </button>
+
+            </div>
+
+
+            <!-- FILE AKAN MUNCUL DI SINI -->
+            <div id="fileList">
+
+                <p>
+                    Memuat tugas...
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+    
 </body>
 </html>
