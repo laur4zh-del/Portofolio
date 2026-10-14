@@ -1,3 +1,4 @@
+
 // Portfolio JavaScript
 
 console.log("Portfolio website loaded successfully.");
@@ -40,7 +41,7 @@ sections.forEach((section) => {
 // ==========================================
 
 const uploadForm =
-  document.getElementById("uploadform");
+  document.getElementById("uploadForm");
 
 const uploadButton =
   document.getElementById("uploadButton");
