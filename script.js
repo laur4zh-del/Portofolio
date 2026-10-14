@@ -40,7 +40,7 @@ sections.forEach((section) => {
 // ==========================================
 
 const uploadForm =
-  document.getElementById("uploadForm");
+  document.getElementById("uploadform");
 
 const uploadButton =
   document.getElementById("uploadButton");
